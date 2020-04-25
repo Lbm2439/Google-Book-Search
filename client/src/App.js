@@ -7,6 +7,7 @@ import { Container} from "./components/Grid";
 import { ToastContainer, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import Footer from "./components/Footer/footer";
 
 class App extends Component {
   render() {
@@ -35,6 +36,7 @@ class App extends Component {
             </Switch>
           </Container>
         </Router>
+        <Footer/>
       </div>
     );
   }

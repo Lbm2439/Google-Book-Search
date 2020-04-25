@@ -6,6 +6,7 @@ import { BookList, BookListItem } from "../../components/BookList";
 import EmptyList from "../../components/EmptyList";
 
 
+
 class Search extends Component {
   state = {
     searchRes: [],
@@ -24,7 +25,6 @@ class Search extends Component {
     axios
       .get(url)
       .then(res => {
-        //console.log(res);
         this.displayRes(res.data);
       })
       .catch(err => console.log(err));
@@ -49,7 +49,7 @@ class Search extends Component {
         <div>
           <input id="bookQ" className="form-control form-control-lg" autoComplete="off" type="text" name="query" onChange={this.handleInput} />
           <button  type="submit" onClick={this.searchGBooks} >
-            Search for Books
+            Search Books
           </button>
                    
 
